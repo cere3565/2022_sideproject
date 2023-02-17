@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>元件測試</title>
+  <script src="/for_js/vue.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <child></child>
+  </div>
+</body>
+<script>
+  Vue.component('child',{
+    template: '<div class="child">嗨 我是子元件</div>',
+    beforeCreate(){
+      console.log('child beforeCeate');
+    },
+    created(){
+      console.log('child created');
+    },
+    beforeMount(){
+      console.log('child beforeMount');
+    },
+    mounted(){
+      console.log('child mounted');
+    }
+  });
+
+  var app = new Vue({
+    el: "#app",
+    data: {		
+      alarmclock:[],      
+    },
+    beforeCreate(){
+    console.log('parent beforeCeate');
+    },
+    created(){
+      console.log('parent created');
+    },
+    beforeMount(){
+      console.log('parent beforeMount');
+    },
+    mounted(){
+      console.log('parent mounted');
+    },
+    methods:{
+      getJsonData(){
+        console.log('parent methods');
+      }
+    }
+  })
+</script>
+</html>
