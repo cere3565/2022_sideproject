@@ -1,0 +1,45 @@
+#app {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.Header{
+  width:100%;
+  text-align:center;
+  line-height:80px;
+  color:#000;
+  font-weight:bold;
+}
+
+.tag{
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  border:5px #000 solid;
+  border-radius:15px;
+}
+
+.tag_span{
+  display:inline;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color:rgb(255, 255, 255);
+}
+
+.my-table {
+  width:100%;
+  margin: 5px;
+  /* border: 2px #000 solid; */
+}
+
+
+.my-table thead{
+  height: 35px;
+  background-color:#4b9fba;
+}
+
+
+tbody tr:nth-child(even) {background: #b5d7e3;height: 45px;}
+tbody tr:nth-child(odd) {background: #FFF;height: 45px;}
+
